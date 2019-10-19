@@ -5,7 +5,6 @@ function! SourceIfExists(file)
   endif
 endfunction
 
-" colorscheme elflord
 syntax enable
 
 set nu
@@ -27,8 +26,13 @@ call plug#begin('~/.vim/plugged')
 " For PuTTY, add export TERM=xterm-256color to .bashrc
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'junegunn/seoul256.vim'
 
 call plug#end()
 
 let g:airline_theme='luna'
 let g:airline#extensions#tabline#enabled = 1
+
+let g:seoul256_background = 234
+let g:seoul256_srgb = 1
+colo seoul256
