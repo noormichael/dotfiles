@@ -27,6 +27,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'junegunn/seoul256.vim'
+Plug 'ludovicchabant/vim-gutentags'
 
 call plug#end()
 
@@ -36,3 +37,5 @@ let g:airline#extensions#tabline#enabled = 1
 let g:seoul256_background = 234
 let g:seoul256_srgb = 1
 colo seoul256
+
+let g:gutentags_project_root = ['Makefile']
